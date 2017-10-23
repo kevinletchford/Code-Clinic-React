@@ -1,0 +1,36 @@
+@import "../sass/settings";
+
+.header {
+  @include breakpoint($mobile) {
+    background: rgba(128, 128, 128, 0.473);
+  }
+
+  @include breakpoint($tablet) {
+  }
+
+  @include breakpoint($desktop) {
+  }
+
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.burgerMenu {
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: none;
+}
