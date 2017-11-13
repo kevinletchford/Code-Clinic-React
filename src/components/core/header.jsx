@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import styles from "./header.module.scss";
-console.log(styles);
+import logo from "../../images/logo-elegant.png";
 
 class Header extends Component {
   render() {
     return (
       <header className={styles.header}>
         <a href="/" className={styles.logo}>
-          CODE-ClINIC
+          <img src={logo} alt="Code Clinic" />
         </a>
         <Menu />
       </header>
@@ -18,7 +18,7 @@ class Header extends Component {
 class Menu extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.menu}>
         <a href="#" className={styles.burgerMenu}>
           <span className={styles.toggle}>Menu</span>
         </a>

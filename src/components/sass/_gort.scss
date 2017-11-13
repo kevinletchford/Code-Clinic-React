@@ -2,11 +2,9 @@
 @import "arrow";
 @import "aspect-ratio";
 @import "audio-only";
-
 @import "breakpoint/breakpoint";
-
 @import "clearfix";
-
+@import "layout/__index";
 @import "layout/__index";
 
 @import "margin-x-y";
@@ -18,3 +16,4 @@
 
 @import "typography/font";
 @import "typography/font-face";
+@import "typography/responsive-type";

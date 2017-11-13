@@ -1,0 +1,27 @@
+@import "../sass/settings";
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+h1 {
+  font-weight: 300;
+  color: white;
+  $map: (
+    320: 50,
+    768: 55,
+    1024: 70
+  );
+  font-size: fluid($map);
+}
+h1 i {
+  font-weight: 300;
+}

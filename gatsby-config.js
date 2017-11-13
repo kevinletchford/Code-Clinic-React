@@ -1,6 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Cat Man`
+    title: `Code Clinic`
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`]
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Open Sans\:300,300i,400,400i,700`]
+      }
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
+  ]
 };

@@ -25,12 +25,20 @@
 .header a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.menu nav ul {
+  display: none;
 }
 
 .burgerMenu {
   text-transform: uppercase;
-}
-
-nav ul {
-  display: none;
 }

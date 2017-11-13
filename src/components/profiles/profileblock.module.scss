@@ -1,0 +1,44 @@
+@import "../sass/settings";
+
+.profiles {
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 10px;
+  @include breakpoint($tabletplus) {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery div {
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+@include breakpoint($desktop) {
+  .gallery div:nth-child(2) {
+    grid-column: auto / span 2;
+  }
+
+  .gallery div:nth-child(5),
+  .gallery div:nth-child(12) {
+    grid-column: auto / span 2;
+  }
+
+  .gallery img,
+  .gallery picture {
+    object-fit: cover;
+    width: auto;
+    max-width: none;
+    height: auto;
+    object-position: 50% 50%;
+    transition: 0.5s;
+  }
+
+  .gallery img:hover {
+    filter: grayscale(80%);
+  }
+}

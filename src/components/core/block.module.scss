@@ -1,0 +1,51 @@
+@import "../sass/settings";
+
+.block {
+  text-align: center;
+}
+
+.inner {
+  padding: 3em 1em 1em;
+}
+
+.micro {
+  $map: (
+    320: 12,
+    768: 12,
+    1024: 14
+  );
+  font-size: fluid($map);
+  line-height: 1.6em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+.main {
+  $map: (
+    320: 26,
+    768: 32,
+    1024: 40
+  );
+  font-size: fluid($map);
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.copy {
+  $map: (
+    320: 16,
+    768: 16,
+    1024: 16
+  );
+  font-size: fluid($map);
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.6em;
+  max-width: 600px;
+  margin: 0 auto;
+}

@@ -4,3 +4,20 @@ $mobile: max-width 560px;
 $tablet: 561px 1024px;
 $tabletplus: 561px;
 $desktop: 1025px;
+
+$body-font: (font-family: ("Open Sans", sans-serif), font-size: 1em);
+
+body {
+  @include font($body-font);
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
