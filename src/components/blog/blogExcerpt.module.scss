@@ -8,6 +8,7 @@
   align-content: center;
   justify-content: center;
   vertical-align: center;
+  background: var(--bg-grey);
   @include breakpoint($tabletplus) {
     grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
     text-align: left;
