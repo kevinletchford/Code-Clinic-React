@@ -5,7 +5,16 @@ $tablet: 561px 1024px;
 $tabletplus: 561px;
 $desktop: 1025px;
 
-$body-font: (font-family: ("Open Sans", sans-serif), font-size: 1em);
+$body-font: (
+  font-family: ("Open Sans", sans-serif),
+  font-size: 1em
+);
+
+:root {
+  --bg-grey: rgb(245, 245, 245);
+  --header: rgb(79, 88, 104);
+  --sub-header: rgb(241, 177, 57);
+}
 
 body {
   @include font($body-font);
