@@ -3,13 +3,19 @@
 .grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;
   max-width: 700px;
   margin: 0 auto;
   align-content: center;
   justify-content: center;
+  background: var(--bg-grey);
   @include breakpoint($tabletplus) {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.grid div {
+  padding: 20px;
+  line-height: 1.6em;
 }
 
 .grid h2 {
@@ -26,4 +32,8 @@
   font-weight: 600;
   color: var(--header);
   padding: 2em;
+}
+.grid span {
+  width: 100%;
+  display: block;
 }
