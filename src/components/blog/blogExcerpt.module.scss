@@ -1,0 +1,50 @@
+@import "../sass/settings";
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  max-width: 705px;
+  align-content: center;
+  justify-content: center;
+  vertical-align: center;
+  @include breakpoint($tabletplus) {
+    grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+    text-align: left;
+  }
+}
+
+.text {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date {
+  $map: (
+    320: 12,
+    768: 12,
+    1024: 14
+  );
+  font-size: fluid($map);
+  line-height: 1.6em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  color: var(--header);
+}
+.container h2 {
+  $map: (
+    320: 20,
+    768: 18,
+    1024: 24
+  );
+  font-size: fluid($map);
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: var(--header);
+}

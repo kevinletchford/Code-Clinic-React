@@ -1,0 +1,29 @@
+@import "../sass/settings";
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 700px;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
+  @include breakpoint($tabletplus) {
+  }
+}
+
+.grid h2 {
+  $map: (
+    320: 12,
+    768: 12,
+    1024: 14
+  );
+  font-size: fluid($map);
+  line-height: 1.6em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: var(--header);
+  padding: 2em;
+}

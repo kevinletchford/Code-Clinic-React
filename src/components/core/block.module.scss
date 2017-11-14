@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.block:last-of-type {
+  margin-bottom: 3em;
+}
+
 .inner {
   padding: 3em 1em 1em;
 }
@@ -20,6 +24,7 @@
   margin: 0;
   padding: 0;
   font-weight: 600;
+  color: var(--sub-header);
 }
 .main {
   $map: (
@@ -33,6 +38,7 @@
   padding: 0;
   font-weight: 700;
   margin-bottom: 1em;
+  color: var(--header);
 }
 .copy {
   $map: (

@@ -5,40 +5,68 @@
   margin: 0 auto;
   grid-gap: 10px;
   @include breakpoint($tabletplus) {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   align-items: center;
   justify-content: center;
+  text-align: left;
+  max-width: 605px;
 }
 
-.gallery div {
-  overflow: hidden;
-  object-fit: cover;
-  object-position: 50% 50%;
+.profile {
+  display: grid;
+  flex-direction: column;
+  background-color: var(--bg-grey);
+  margin-top: 20px;
 }
 
-@include breakpoint($desktop) {
-  .gallery div:nth-child(2) {
-    grid-column: auto / span 2;
-  }
+.profile img {
+  width: 100%;
+}
 
-  .gallery div:nth-child(5),
-  .gallery div:nth-child(12) {
-    grid-column: auto / span 2;
-  }
+.profileText {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 
-  .gallery img,
-  .gallery picture {
-    object-fit: cover;
-    width: auto;
-    max-width: none;
-    height: auto;
-    object-position: 50% 50%;
-    transition: 0.5s;
-  }
-
-  .gallery img:hover {
-    filter: grayscale(80%);
-  }
+.role {
+  $map: (
+    320: 10,
+    768: 10,
+    1024: 12
+  );
+  font-size: fluid($map);
+  line-height: 1.6em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: var(--sub-header);
+}
+.name {
+  $map: (
+    320: 20,
+    768: 18,
+    1024: 24
+  );
+  font-size: fluid($map);
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: var(--header);
+}
+.description {
+  $map: (
+    320: 12,
+    768: 12,
+    1024: 13
+  );
+  font-size: fluid($map);
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
